@@ -12,6 +12,12 @@
 
     <name>WhatsApp Login WAR</name>
 
+    <!-- ✅ FIX FOR JENKINS ERROR -->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>jakarta.servlet</groupId>
@@ -22,16 +28,15 @@
     </dependencies>
 
     <build>
-             <finalName>whatsapp-login</finalName>
+        <finalName>whatsapp-login</finalName>
 
-    <plugins>
-        <plugin>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.4.0</version>
-        </plugin>
-    </plugins>
-             
-      
+        <plugins>
+            <!-- WAR Plugin -->
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
