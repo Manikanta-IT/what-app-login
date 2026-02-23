@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<head>
     <title>WhatsApp Login</title>
     <style>
         body {
